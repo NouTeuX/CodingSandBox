@@ -1,0 +1,29 @@
+.sectionTextArea {
+    display: flex;
+}
+
+.textAreaHtml {
+    width: 50%;
+}
+
+.textAreaCss {
+    width: 50%;
+}
+
+.form-control {}
+
+.titleHtml {
+    height: 40px;
+    border: 2px solid gray;
+    width: 50%;
+}
+
+.titleCss {
+    height: 40px;
+    border: 2px solid gray;
+    width: 50%;
+}
+
+.blocTitle {
+    display: flex;
+}
