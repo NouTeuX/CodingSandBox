@@ -18,6 +18,7 @@ html {
 .textAreaCss {
     width: 33%;
     margin-top: 3px;
+    margin-right: 3px;
 }
 
 .textAreaJs {
@@ -61,6 +62,7 @@ html {
     background-color: #172433;
     color: #F1F1F1;
     border-radius: 5px;
+    margin-right: 3px;
 }
 
 .titleJS {
