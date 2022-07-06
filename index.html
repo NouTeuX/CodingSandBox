@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--------------------------------------------------------HEAD---------------------------------->
 
 <head>
     <meta charset="UTF-8">
@@ -12,10 +13,13 @@
     <script type="text/javascript" src="script/main.js"></script>
     <title>CodingSandBox</title>
 </head>
+<!--------------------------------------------------------BUILD PAGES---------------------------------->
 
 <body
     onload="constructableHtmlCheck();constructableCssCheck();constructableJsCheck();TextareaHtml();TextareaCss();TextareaJs();compteur()">
+    <!------------------------------------------------------------------------------------------>
 
+    <!--------------------------------------------------------TEXT AREA TITLE AND MENU ITEMS---------------------------------->
     <div class=" blocTitle">
 
         <div class="titleHtml">
@@ -82,21 +86,22 @@
 
     </div>
 
+    <!--------------------------------------------------------TEXT AREA HTML CSS JS BUILD WITH JS---------------------------------->
 
     <div class="sectionTextArea">
-
+        <!--------------------------------------------------------HTML---------------------------------->
         <div class="textAreaHtml">
             <div class="form-floating" id="txtHtml">
             </div>
         </div>
 
 
-
+        <!--------------------------------------------------------CSS---------------------------------->
         <div class="textAreaCss">
             <div class="form-floating" id="txtCss">
             </div>
         </div>
-
+        <!--------------------------------------------------------JS---------------------------------->
         <div class="textAreaJs">
             <div class="form-floating" id="txtJs">
             </div>
@@ -104,7 +109,7 @@
 
     </div>
 
-
+    <!--------------------------------------------------------CHECK INPUT FOR TEXT LENGHT BUILD WITH JS---------------------------------->
     <div class="checkInput">
 
         <div class="checkForHtml" id="checkForHtml"></div>
@@ -114,37 +119,39 @@
         <div class="checkForJS" id="checkForJS"></div>
 
     </div>
-
+    <!--------------------------------------------------------CHARACTERS COUNT BUILD WITH JS---------------------------------->
     <div class="compteur" id="compteur"></div>
 
 
-
+    <!--------------------------------------------------------PROGRESS BAR BUILD WITH JS---------------------------------->
     <div class="progressBarBloc">
-
+        <!--------------------------------------------------------PROGRESS HTML---------------------------------->
         <div class="progress" id="progressId">
             <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0"
                 aria-valuemax="100" id="progressHtml"></div>
         </div>
 
-
+        <!--------------------------------------------------------PROGRESS CSS---------------------------------->
         <div class="progress" id="progressId">
             <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0"
                 aria-valuemax="100" id="progressCss"></div>
         </div>
-
+        <!--------------------------------------------------------PROGRESS JS---------------------------------->
         <div class="progress" id="progressId">
             <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0"
                 aria-valuemax="100" id="progressJs"></div>
         </div>
 
     </div>
+
     <div class="margin"></div>
+    <!--------------------------------------------------------SECTION HTML EDIT BY USERS---------------------------------->
     <div class="showResultSection" id="showResultSection">
 
     </div>
-
+    <!--------------------------------------------------------SECTION CSS EDIT BY USERS---------------------------------->
     <style class="cssStyleUsers" id="cssStyleUsers"></style>
-
+    <!--------------------------------------------------------SECTION JS EDIT BY USERS---------------------------------->
     <script id="userScript"></script>
 
 </body>
