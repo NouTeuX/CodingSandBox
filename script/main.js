@@ -8,8 +8,8 @@ function TextareaHtml() {
     document.getElementById("txtHtml").innerHTML = '<textarea onkeyup="editHtml(); resteHtml(this.value); test()" class="form-control" id="floatingTextareaHtml"style="height: 300px"maxlength=' + maxSize + '></textarea>'
 }
 function TextareaJs() {
-    let maxSize = 200
-    document.getElementById("txtJs").innerHTML = '<textarea onkeyup="editHtml(); resteJs(this.value); test()" class="form-control" id="floatingTextareaHtml"style="height: 300px"maxlength=' + maxSize + '></textarea>'
+    let maxSize = document.querySelector('input[name="checkJs"]:checked').value
+    document.getElementById("txtJs").innerHTML = '<textarea onkeyup="editJs(); resteJs(this.value); test()" class="form-control" id="floatingTextareaJs"style="height: 300px"maxlength=' + maxSize + '></textarea>'
 }
 
 
@@ -88,6 +88,12 @@ function editCss() {
     document.getElementById('cssStyleUsers').innerHTML = textToInsert;
 }
 
+//////////////////////////////////////////// JS EDIT ///////////////
+function editJs() {
+    let textToInsert = document.getElementById('floatingTextareaJs').value
+    document.getElementById('userScript').innerHTML = textToInsert;
+}
+
 
 ///////////////////////////////////////////COUNT CONSTRUCTABLE/////////////
 function compteur() {
@@ -95,4 +101,36 @@ function compteur() {
     let maxSizeHtml = document.querySelector('input[name="checkHtml"]:checked').value
     let maxSizeJs = document.querySelector('input[name="checkJs"]:checked').value
     document.getElementById("compteur").innerHTML = '<div>Characters remaining :<span id="caracteresHtml">' + " " + maxSizeHtml + ' </span></div><div>Characters remaining :<span id="caracteresCss">' + " " + maxSizeCss + ' </span></div><div>Characters remaining :<span id="caracteresJs">' + " " + maxSizeJs + ' </span></div>'
+}
+
+//////////////////////////////////////////// CONSTRUCTABLE CHECKBOX ///////////////
+
+function constructableHtmlCheck() {
+    let disabledOrNot = ""
+    document.getElementById("checkForHtml").innerHTML = ' Text max lenght •<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="checkHtml" onclick="compteur();TextareaHtml()"id="checkHtml" value="200" checked ' + disabledOrNot + '><label class="form-check-label" for="inlineRadio1">200</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="checkHtml" onclick="compteur();TextareaHtml()"id="checkHtml" value="300"' + disabledOrNot + '><label class="form-check-label" for="inlineRadio1">300</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="checkHtml" onclick="compteur();TextareaHtml()"id="checkHtml" value="500"' + disabledOrNot + '><label class="form-check-label" for="inlineRadio1">500</label></div> '
+}
+
+function constructableCssCheck() {
+    document.getElementById("checkForCss").innerHTML = ' Text max lenght •<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="checkCss" onclick="compteur(); TextareaCss()"id="checkCss" value="200" checked><label class="form-check-label" for="inlineRadio1">200</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="checkCss" onclick="compteur(); TextareaCss()"id="checkCss" value="300"><label class="form-check-label" for="inlineRadio1">300</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="checkCss" onclick="compteur(); TextareaCss()"id="checkCss" value="500"><label class="form-check-label" for="inlineRadio1">500</label></div> '
+}
+
+function constructableJsCheck() {
+    document.getElementById("checkForJS").innerHTML = ' Text max lenght •<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="checkJs" onclick="compteur();TextareaJs()" id="checkJs"value="200" checked><label class="form-check-label" for="inlineRadio1">200</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" onclick="compteur();TextareaJs()" name="checkJs" id="checkJs"value="300"><label class="form-check-label" for="inlineRadio1">300</label></div><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="checkJs" onclick="compteur();TextareaJs()" id="checkJs"value="500"><label class="form-check-label" for="inlineRadio1">500</label></div> '
+}
+
+////////////////////////////////////////IMPORT COLOR CSS //////////////////////////////////////
+function importRed() {
+    document.getElementById('floatingTextareaCss').value += "#FF0000"
+}
+function importGreen() {
+    document.getElementById('floatingTextareaCss').value += "#00FF00"
+}
+function importBlue() {
+    document.getElementById('floatingTextareaCss').value += "#0000FF"
+}
+function importYellow() {
+    document.getElementById('floatingTextareaCss').value += "#FFFF00"
+}
+function importPurple() {
+    document.getElementById('floatingTextareaCss').value += "#660099"
 }
