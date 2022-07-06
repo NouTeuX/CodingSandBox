@@ -159,3 +159,11 @@ html {
     background-color: purple;
     color: #F1F1F1;
 }
+
+#buttonBalise {
+    float: right;
+}
+
+#btnBalise {
+    background-color: #e54c21;
+}

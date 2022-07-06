@@ -134,3 +134,17 @@ function importYellow() {
 function importPurple() {
     document.getElementById('floatingTextareaCss').value += "#660099"
 }
+
+///////////////////////////////////IMPORT TAG HTML ///////////////////////////////////
+function importDiv() {
+    document.getElementById('floatingTextareaHtml').value += "<div></div>"
+}
+function importH1() {
+    document.getElementById('floatingTextareaHtml').value += "<h1></h1>"
+}
+function importP() {
+    document.getElementById('floatingTextareaHtml').value += "<p></p>"
+}
+function importSpan() {
+    document.getElementById('floatingTextareaHtml').value += "<span></span>"
+}
